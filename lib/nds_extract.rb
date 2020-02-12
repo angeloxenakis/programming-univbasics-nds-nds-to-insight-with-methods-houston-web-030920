@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+require 'pry'
 
 binding.pry
 # Find a way to accumulate the :worldwide_grosses and return that Integer
