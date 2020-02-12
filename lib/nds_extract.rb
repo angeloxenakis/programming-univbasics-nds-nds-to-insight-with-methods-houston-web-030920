@@ -15,6 +15,7 @@ def gross_for_director(director_data)
     end
     result[directors_database[directors_index][:name]] = gross_total
     directors_index += 1
+  end
 end
 
 # Write a method that, given an NDS creates a new Hash
