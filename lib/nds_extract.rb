@@ -21,6 +21,6 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {
-    directors_database[0][:name] => 
+    directors_database[0][:name] => 1357566430
   }
 end
