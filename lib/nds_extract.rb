@@ -1,13 +1,11 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
-require 'pry'
 
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
   directors_index = 0 
-  binding.pry
   while directors_index < directors_database.length do
     movies_index = 0
     gross_total = 0
