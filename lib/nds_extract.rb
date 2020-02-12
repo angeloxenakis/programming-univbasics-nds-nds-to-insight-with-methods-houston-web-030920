@@ -15,15 +15,15 @@ require 'directors_database'
 #   gross_total
 # end
 
-def gross_for_director(nds, row_index, column_index)
-  director_total = 0
+def gross_for_director(director_data)
+  gross_total = 0
   inner_len = directors_database[director_data][:movies].length
   inner_index = 0
   while inner_index < inner_len do
-    director_total += nds[row_index][column_index][inner_index][:price]
+    gross_total += nds[row_index][column_index][inner_index][:price]
     inner_index += 1
   end
-  director_total
+  gross_total
 end
 
 # Write a method that, given an NDS creates a new Hash
