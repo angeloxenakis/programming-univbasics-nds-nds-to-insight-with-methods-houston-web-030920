@@ -24,7 +24,7 @@ def directors_totals(nds)
   }
   index = 0 
   while index < directors_database.length do
-    gross_for_director(director_data)
+    gross_for_director(directors_database[index][:movies])
     index += 1
   end
   pp result
